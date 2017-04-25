@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SBRingtoneManager</string>
+    <string name="play">Play</string>
+    <string name="stop">Stop</string>
+    <string name="select_file">Select %s Audio File</string>
+    <string name="select">Select</string>
+    <string name="silent">Silent</string>
+</resources>
