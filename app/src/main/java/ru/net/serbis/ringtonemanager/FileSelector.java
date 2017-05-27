@@ -1,17 +1,14 @@
 package ru.net.serbis.ringtonemanager;
 
-import android.content.Intent;
-import android.database.Cursor;
-import android.media.MediaPlayer;
-import android.media.RingtoneManager;
-import android.net.Uri;
-import android.os.Bundle;
-import android.os.Handler;
-import android.provider.MediaStore;
-import android.view.View;
+import android.content.*;
+import android.database.*;
+import android.media.*;
+import android.net.*;
+import android.os.*;
+import android.provider.*;
+import android.view.*;
 import android.widget.*;
-
-import java.io.File;
+import java.io.*;
 
 /**
  * SEBY0408
@@ -191,7 +188,14 @@ public class FileSelector extends android.app.Activity
     @Override
     public void onBackPressed()
     {
-        super.onBackPressed();
         stop();
+        super.onBackPressed();
+    }
+
+    @Override
+    protected void onStop()
+    {
+        stop();
+        super.onStop();
     }
 }
